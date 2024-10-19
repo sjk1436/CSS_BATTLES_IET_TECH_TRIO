@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol Design</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #8ACFBF; 
+        }
+
+        .symbol {
+            position: relative;
+            width: 350px;
+            height: 350px;
+        }
+
+        .outer-circle {
+            width: 100%;
+            height: 100%;
+            border: 20px solid #124C3A; 
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .inner-circle {
+            width: 100px;
+            height: 100px;
+            background-color: #124C3A;
+            border-radius: 35%;
+            padding-left: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .horizontal-bar {
+            width: 170px;
+            height: 30px;
+            background-color: #124C3A;
+            position: absolute;
+            margin: 20px;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .horizontal-bar-bottom {
+            top: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="symbol">
+        <div class="outer-circle"></div>
+        <div class="inner-circle"></div>
+        <div class="horizontal-bar"></div>
+        <div class="horizontal-bar horizontal-bar-bottom"></div>
+    </div>
+</body>
+</html>
